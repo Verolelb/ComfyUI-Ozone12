@@ -203,6 +203,18 @@ Note: a node only sends its widget payload when it actually executes — make
 sure at least one of its outputs reaches an output node (e.g. `Preview Image`
 after `Ozone Level Meter`, `Save Audio` after `Ozone A/B Compare`).
 
+## Example workflow
+
+[`workflows/Ozone12_Global_Mastering_AB.json`](workflows/Ozone12_Global_Mastering_AB.json)
+shows a full mastering chain end-to-end: load an audio file, run it through
+`Ozone Global Mastering` (global preset, e.g. *All Purpose Mastering*),
+compare dry vs. mastered with `Ozone A/B Compare`, watch both on `Ozone
+Level Meter`s, and save the results.
+
+> The workflow points at a local file (`audio_minimax_music3_00020.mp3`)
+> and a local VST path (`C:\Program Files\Common Files\VST3\iZotope`) —
+> pick your own audio and preset after loading it in ComfyUI.
+
 ## Notes / limitations
 
 - **Licensing**: the plugins must be authorized on this machine (iZotope
