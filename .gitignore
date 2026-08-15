@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# Machine-specific generated data (personal Ozone presets + measurements
+# taken on this machine — regenerate with _measure_presets.py instead).
+# preset_types.json is optional: without it the preset dropdown badges
+# are simply not shown.
+preset_types.json
+preset_measurements.json
